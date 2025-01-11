@@ -1,0 +1,4 @@
+0 Chatarra
+1 Latas de Aluminio
+2 BPET T
+3 Vidrio B
