@@ -6,8 +6,10 @@ import numpy as np
 import base64
 from flask import Flask, request, jsonify
 import io
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app, resources={r"/*": {"origins": "*"}})  # Habilitar CORS para todas las rutas
 
 # Cargar el modelo
 model = load_model("C:/Users/danbe/Downloads/DevWork/Proyectos Github\APIClasificadorResiduosPY/keras_model.h5", compile=False)
